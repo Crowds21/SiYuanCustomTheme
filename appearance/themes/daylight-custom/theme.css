@@ -204,6 +204,45 @@ span[data-type="block-ref"] {
     color: var(--b3-protyle-inline-mark-color);
 }
 */
+.protyle-wysiwyg [data-node-id][custom-riff-decks] {
+  border-radius: 0;
+  background: none; 
+  box-shadow: none;
+  border-left:5px solid #4089e3;
+  font-family: 'JetBrainsMono Nerd Font', '霞鹜文楷等宽', monospace;
+  line-height: 1.8em;
+  padding: 1em 2em;
+  position: relative;
+  transition: 0.2s border ease-in-out;
+  z-index: 0;
+  
+}
+.protyle-wysiwyg [data-node-id][custom-riff-decks]:before{
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: -5px;
+  height: 2em;
+  width: 5px;
+  margin-top: -1em;
+}
+.protyle-wysiwyg [data-node-id][custom-riff-decks]:after{
+  content: "󱍁";
+  position: absolute;
+  top: 50%;
+  left: -0.5em;
+  color: #4089e3;
+  font-style: normal;
+  line-height: 1em;
+  text-align: center;
+  text-indent: -2px;
+  width: 1em;
+  margin-top: -0.5em;
+  transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
+}
+
+
 /*BG IMG 会随着输入内容的增多而变化,不太好*/
 /*
 .protyle-wysiwyg.protyle-wysiwyg--attr{
@@ -214,3 +253,51 @@ span[data-type="block-ref"] {
   background-position: 0, 0, 25px 25px;
 }
 */
+
+/*Quote*/
+.b3-typography blockquote, 
+.b3-typography .bq, 
+.protyle-wysiwyg blockquote, 
+.protyle-wysiwyg .bq{
+  border-radius: 0;
+  background: none; 
+  border-left: 5px solid #00CC8F;
+  font-family: 'JetBrainsMono Nerd Font', '霞鹜文楷等宽', monospace;
+  line-height: 1.8em;
+  padding: 1em 2em;
+  position: relative;
+  transition: 0.2s border ease-in-out;
+  z-index: 0;
+}
+
+.b3-typography blockquote, 
+.b3-typography .bq, 
+.protyle-wysiwyg blockquote, 
+.protyle-wysiwyg .bq:before{
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: -5px;
+  height: 2em;
+  width: 5px;
+  margin-top: -1em;
+}
+
+.b3-typography blockquote, 
+.b3-typography .bq, 
+.protyle-wysiwyg blockquote, 
+.protyle-wysiwyg .bq:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5em;
+  color: #00CC8F;
+  font-style: normal;
+  line-height: 1em;
+  text-align: center;
+  text-indent: -2px;
+  width: 1em;
+  margin-top: -0.5em;
+  transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
+}
