@@ -297,3 +297,7 @@ span[data-type="block-ref"] {
   color:#fa7030 !important;
 } 
 
+ /*Tags*/
+span[data-type~="tag"]{
+  font-family= "Maple Mono SC NF"
+}
