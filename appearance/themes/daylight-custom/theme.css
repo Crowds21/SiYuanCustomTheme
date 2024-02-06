@@ -21,7 +21,7 @@
     --b3-theme-on-error: #fff;
 
     /* 字体 */
-    --b3-font-family: "VictorMono Nerd Font","霞鹜文楷等宽","Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family:"VictorMono Nerd Font","霞鹜文楷等宽","Maple Mono SC NF","Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-code: "JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-graph: mononoki;
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
@@ -166,14 +166,9 @@
     --b3-pdf-background7: #944194;
     --b3-pdf-dark: #212224;
 }
-
 /* https://github.com/siyuan-note/siyuan/issues/6440 */
 .protyle-action--order:after {
     mix-blend-mode: multiply;
-}
-/*Font*/
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family:"VictorMono Nerd Font","霞鹜文楷等宽",cursive; 
 }
 
 /*code font*/
@@ -193,23 +188,14 @@ span[data-type="block-ref"] {
     color: rgba(52, 85, 235, 1) !important;
 }
 
-
-/*Cards*/
-/*
-.card__block .protyle-wysiwyg span[data-type="mark"] {
-    color: transparent;
-}
-
-.card__block .protyle-wysiwyg span[data-type="mark"]:hover {
-    color: var(--b3-protyle-inline-mark-color);
-}
-*/
+/*Flash Cards*/
 .protyle-wysiwyg [data-node-id][custom-riff-decks] {
   border-radius: 0;
   background: none; 
   box-shadow: none;
   border-left:5px solid #4089e3;
   font-family: 'Maple Mono SC NF';
+  font-feature-settings: 'cv01' 1, 'ss01' 1 , 'ss02' 1 ,'ss03' 1 , 'ss04' 1, 'ss05' 1;
   line-height: 1.8em;
   padding: 1em 2em;
   position: relative;
@@ -263,13 +249,12 @@ span[data-type="block-ref"] {
   background: none; 
   border-left: 5px solid #00CC8F;
   font-family: 'Maple Mono SC NF';
+  font-feature-settings: 'cv01' 1, 'ss01' 1 , 'ss02' 1 ,'ss03' 1 , 'ss04' 1, 'ss05' 1;
   line-height: 1.8em;
   padding: 1em 2em;
   position: relative;
-  transition: 0.2s border ease-in-out;
   z-index: 0;
 }
-
 .b3-typography blockquote, 
 .b3-typography .bq, 
 .protyle-wysiwyg blockquote, 
@@ -283,7 +268,6 @@ span[data-type="block-ref"] {
   width: 5px;
   margin-top: -1em;
 }
-
 .b3-typography blockquote, 
 .b3-typography .bq, 
 .protyle-wysiwyg blockquote, 
@@ -299,5 +283,17 @@ span[data-type="block-ref"] {
   text-indent: -2px;
   width: 1em;
   margin-top: -0.5em;
-  transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
 }
+[custom-quote-type="info"]{
+  border-left: 5px solid #17aef9 !important;
+}
+[custom-quote-type="info"]:after{
+  color: #17aef9 !important;
+} 
+[custom-quote-type="warn"]{
+  border-left: 5px solid #fb8957 !important;
+}
+[custom-quote-type="warn"]:after{
+  color:#fa7030 !important;
+} 
+
