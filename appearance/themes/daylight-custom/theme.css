@@ -209,7 +209,7 @@ span[data-type="block-ref"] {
   background: none; 
   box-shadow: none;
   border-left:5px solid #4089e3;
-  font-family: 'JetBrainsMono Nerd Font', '霞鹜文楷等宽', monospace;
+  font-family: 'Maple Mono SC NF';
   line-height: 1.8em;
   padding: 1em 2em;
   position: relative;
@@ -262,7 +262,7 @@ span[data-type="block-ref"] {
   border-radius: 0;
   background: none; 
   border-left: 5px solid #00CC8F;
-  font-family: 'JetBrainsMono Nerd Font', '霞鹜文楷等宽', monospace;
+  font-family: 'Maple Mono SC NF';
   line-height: 1.8em;
   padding: 1em 2em;
   position: relative;
