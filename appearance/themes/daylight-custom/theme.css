@@ -174,9 +174,8 @@
 /*code font*/
 .hljs-keyword, .hljs-comment{
   font-family:"VictorMono Nerd Font","霞鹜文楷等宽",monospace; 
-  font-style: italic;
+  /* font-style: italic; */
 }
-
 
 .b3-typography div.hljs,
 .protyle-wysiwyg div.hljs {
@@ -187,45 +186,45 @@
 span[data-type="block-ref"] {
     color: rgba(52, 85, 235, 1) !important;
 }
-
+span[data-type="block-ref"]:before {
+  content:" "
+}
+/*Web link*/
+.protyle-wysiwyg [data-node-id] span[data-type~=a]:before{
+  content:" "
+}
 /*Flash Cards*/
 .protyle-wysiwyg [data-node-id][custom-riff-decks] {
   border-radius: 0;
-  background: none; 
   box-shadow: none;
-  border-left:5px solid #4089e3;
-  font-family: 'Maple Mono SC NF';
-  font-feature-settings: 'cv01' 1, 'ss01' 1 , 'ss02' 1 ,'ss03' 1 , 'ss04' 1, 'ss05' 1;
+  border-left:4px solid var(--b3-theme-primary);
   line-height: 1.8em;
-  padding: 1em 2em;
-  position: relative;
-  transition: 0.2s border ease-in-out;
+  padding: 0.5em 1em;
   z-index: 0;
   
 }
 .protyle-wysiwyg [data-node-id][custom-riff-decks]:before{
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: var(--b3-theme-background);
   top: 50%;
-  left: -5px;
+  left: -4px;
   height: 2em;
   width: 5px;
   margin-top: -1em;
 }
 .protyle-wysiwyg [data-node-id][custom-riff-decks]:after{
-  content: "󱍁";
+  content: "󰠗";
   position: absolute;
-  top: 50%;
+  top: 50%;󰠗
   left: -0.5em;
-  color: #4089e3;
+  color:var(--b3-theme-primary);
   font-style: normal;
   line-height: 1em;
   text-align: center;
   text-indent: -2px;
   width: 1em;
   margin-top: -0.5em;
-  transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
 }
 
 
@@ -247,7 +246,7 @@ span[data-type="block-ref"] {
 .protyle-wysiwyg .bq{
   border-radius: 0;
   background: none; 
-  border-left: 5px solid #00CC8F;
+  border-left: 5px solid var( --b3-graph-asset-point);
   font-family: 'Maple Mono SC NF';
   font-feature-settings: 'cv01' 1, 'ss01' 1 , 'ss02' 1 ,'ss03' 1 , 'ss04' 1, 'ss05' 1;
   line-height: 1.8em;
@@ -261,7 +260,7 @@ span[data-type="block-ref"] {
 .protyle-wysiwyg .bq:before{
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: var(--b3-theme-background);
   top: 50%;
   left: -5px;
   height: 2em;
@@ -276,7 +275,7 @@ span[data-type="block-ref"] {
   position: absolute;
   top: 50%;
   left: -0.5em;
-  color: #00CC8F;
+  color:var(--b3-graph-asset-point);
   font-style: normal;
   line-height: 1em;
   text-align: center;
@@ -298,6 +297,6 @@ span[data-type="block-ref"] {
 } 
 
  /*Tags*/
-span[data-type~="tag"]{
-  font-family= "Maple Mono SC NF"
-}
+/* span[data-type~="tag"]{ */
+/*   font-family= "Maple Mono SC NF" */
+/* } */
