@@ -1,7 +1,6 @@
 # ignore all files 
-*
+/*
 # keep .gitignore  and custom theme
 !.gitignore
-!themes
 !/themes/daylight-custom/
 !/themes/midnight-custom/
