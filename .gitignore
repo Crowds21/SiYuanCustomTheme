@@ -4,5 +4,5 @@
 !.gitignore
 !README.md
 # !themes/
-!themes/daylight-custom
-!themes/midnight-custom
+!themes/daylight\-custom/
+!themes/midnight\-custom/
