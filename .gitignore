@@ -2,5 +2,6 @@
 /*
 # keep .gitignore  and custom theme
 !.gitignore
-!/themes/daylight-custom/
-!/themes/midnight-custom/
+!README.md
+!themes/daylight-custom/
+!themes/midnight-custom/
